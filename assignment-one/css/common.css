@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	/* background-color:powderblue; */
+}
+
+ul,ol{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+
+.clear::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.txt_center{
+	text-align: center;
+}
+
+.fright{
+	float: right;
+}
+
+.fleft{
+	float: left;
+}
+
+.list_inline li{
+	display: inline-block;
+}
+
+/* ========================== STYLING ========================== */
+.list_bullet{
+    counter-reset: step;
+}
+
+.list_bullet li::before{
+    content:"\2022";    
+    color:red;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0 10px 0;
+}
